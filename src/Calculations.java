@@ -6,12 +6,12 @@ public class Calculations {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter two integer numbers (0-100):");
         int dividend = scanner.nextInt();
-        int divider = scanner.nextInt();
+        int divisor = scanner.nextInt();
 
-        if (divider == 0) {
+        if (divisor == 0) {
             System.out.println("Can't divide by 0!");
         } else {
-        int remainder = dividend % divider;
+        int remainder = dividend % divisor;
             System.out.println("Remainder of division is: " + remainder);
         }
     }

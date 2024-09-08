@@ -5,12 +5,13 @@ public class Calculations {
     public static void calculations() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter two integer numbers (0-100):");
-        int firstNumber = scanner.nextInt();
-        int secondNumber = scanner.nextInt();
-        if (secondNumber ==0) {
+        int dividend = scanner.nextInt();
+        int divider = scanner.nextInt();
+
+        if (divider ==0) {
             System.out.println("Can't divide by 0!");
         } else {
-        int c = firstNumber % secondNumber;
+        int c = dividend % divider;
             System.out.println("Remainder of division is: " + c);
         }
     }

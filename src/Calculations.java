@@ -8,11 +8,11 @@ public class Calculations {
         int dividend = scanner.nextInt();
         int divider = scanner.nextInt();
 
-        if (divider ==0) {
+        if (divider == 0) {
             System.out.println("Can't divide by 0!");
         } else {
-        int c = dividend % divider;
-            System.out.println("Remainder of division is: " + c);
+        int remainder = dividend % divider;
+            System.out.println("Remainder of division is: " + remainder);
         }
     }
 }

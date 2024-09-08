@@ -10,7 +10,7 @@ public class Calculations {
         if (secondNumber ==0) {
             System.out.println("Can't divide by 0!");
         } else {
-        int c = a % secondNumber;
+        int c = firstNumber % secondNumber;
             System.out.println("Remainder of division is: " + c);
         }
     }

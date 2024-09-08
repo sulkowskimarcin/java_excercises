@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculations {
 
-    public static void calculations() {
+    public static void calculateRemainder() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter two integer numbers (0-100):");
         int dividend = scanner.nextInt();
@@ -14,5 +14,14 @@ public class Calculations {
         int remainder = dividend % divisor;
             System.out.println("Remainder of division is: " + remainder);
         }
+    }
+
+    public static int calculateRemainder(int dividend, int divisor) {
+        if (divisor == 0) {
+            System.out.println("Can't divide by 0!");
+            return -1;
+        }
+
+        return dividend % divisor;
     }
 }
